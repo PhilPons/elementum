@@ -1,7 +1,7 @@
 ---
 filename: trRESTXQ
-date: 2014-02-18
-version: 0.1
+date: 2014-04-07
+version: 0.2
 ---
 
 Traduction article RESTXQ (documentation BaseX)
