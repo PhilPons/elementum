@@ -267,11 +267,11 @@ Les paramètres de cookies sont spécifiés de la même manière que les [param�
 
 ### Réponses (_responses_)
 
-Par défaut, une requête réussie reçoit le code de statut HTTP `200` (OK) et est suivie du contenu correspondant. Une requête éronnée mène à un code d'erreur et un message d'erreur optionnel (par exemple `404` pour "resource not found").
+Par défaut, une requête réussie reçoit le code de statut HTTP `200` (OK) et est suivie du contenu correspondant. Une requête erronée mène à un code d'erreur et un message d'erreur optionnel (par exemple `404` pour "resource not found").
 
 #### Réponses personnalisées (_custom responses_)
 
-Les réponses personnalisées peuvent être construites au sein de XQUery en retournant un élément `rest:response`, un nœeud fils `http:response` qui correspond à la syntaxe du [module Client HTTP de la spécification EXPath](http://expath.org/spec/http-client), et plusieurs nœuds fils optionnels qui seront serialisés comme habituellement. Une fonction qui réagit sur une ressource inconnue peut ressembler à ce qui suit :
+Les réponses personnalisées peuvent être construites au sein de XQuery en retournant un élément `rest:response`, un nœud fils `http:response` qui correspond à la syntaxe du [module Client HTTP de la spécification EXPath](http://expath.org/spec/http-client), et plusieurs nœuds fils optionnels qui seront sérialisés comme habituellement. Une fonction qui réagit sur une ressource inconnue peut ressembler à ce qui suit :
 
 ```xquery
     declare %rest:path("") function page:error404() {
@@ -285,6 +285,8 @@ Les réponses personnalisées peuvent être construites au sein de XQUery en ret
 ```
 
 #### Redirections et Retours en arrière (_forwards and redirects_)
+
+Les deux éléments XML 'rest:forward' et 'rest:redirect' peuvent être utilisés dans le contexte d'[Applications Web](http://docs.basex.org/wiki/Web_Application), précisément dans le contexte de RESTXQ. Ces nœuds permettent par exemple plusieurs [Mises à jour XQuery](http://docs.basex.org/wiki/XQuery_Update) dans une rangée, par la redirection vers le chemin RESTXQ de fonctions mises à jour. 
 
 // Reprendre la traduction //
 
