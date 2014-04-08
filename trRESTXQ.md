@@ -192,7 +192,7 @@ Veuillez noter que le support des types multipart est encore expérimental, il p
 
 ### Paramètres (_parameters_)
 
-Les annotations suivantes peuvent être employées pour lier des valeurs de requête à des arguments de fonction. Les valeurs seront implicitement converties vers le type de l'argument.
+Les annotations suivantes peuvent êtrees pou employér lier des valeurs de requête à des arguments de fonction. Les valeurs seront implicitement converties vers le type de l'argument.
 
 #### Paramètres de requête (_query parameters_)
 
@@ -209,7 +209,7 @@ La valeur du _premier paramètre_, si elle est trouvée dans le [composant de re
         };
  ```
 
-#### Champs de formulaire HTML (_HTML form fields)
+#### Champs de formulaire HTML (_HTML form fields_)
 
 Les paramètres de formulaire sont spécifiés de la même manière que les [paramètres de requête](http://docs.basex.org/wiki/RESTXQ#Query_Parameters). Leurs valeurs sont extraites depuis les requêtes GET ou POST.
 
@@ -252,7 +252,8 @@ Le contenu des fichiers est placé dans un [map](http://docs.basex.org/wiki/Map_
 Les paramètres d'en-tête sont spécifiés de la même manière que les [paramètres de requête](http://docs.basex.org/wiki/RESTXQ#Query_Parameters) :
 
 ```xquery
-    %rest:form-param("parameter", "{$value}", "default")
+    %rest:header-param("User-Agent", "{$user-agent}")
+    %rest:header-param("Referer", "{$referer}", "none")
 ```
 
 #### Cookies
@@ -260,7 +261,8 @@ Les paramètres d'en-tête sont spécifiés de la même manière que les [param�
 Les paramètres de cookies sont spécifiés de la même manière que les [paramètres de requête](http://docs.basex.org/wiki/RESTXQ#Query_Parameters) :
 
 ```xquery
-    %rest:form-param("parameter", "{$value}", "default")
+    %rest:cookie-param("username", "{$user}")
+    %rest:cookie-param("authentification", "{$auth}", "no_auth")
 ```
 
 ### Réponses (_responses_)
