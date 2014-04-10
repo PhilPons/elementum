@@ -286,7 +286,7 @@ Les réponses personnalisées peuvent être construites au sein de XQuery en ret
 
 #### Redirections et Retours en arrière (_forwards and redirects_)
 
-Les deux éléments XML 'rest:forward' et 'rest:redirect' peuvent être utilisés dans le contexte d'[Applications Web](http://docs.basex.org/wiki/Web_Application), précisément dans le contexte de RESTXQ. Ces nœuds permettent par exemple plusieurs [Mises à jour XQuery](http://docs.basex.org/wiki/XQuery_Update) dans une rangée, par la redirection vers le chemin RESTXQ de fonctions mises à jour. 
+Les deux éléments XML 'rest:forward' et 'rest:redirect' peuvent être utilisés dans le contexte d'[Applications Web](http://docs.basex.org/wiki/Web_Application), plus précisément dans le contexte de RESTXQ. Ces nœuds permettent par exemple plusieurs [Mises à jour XQuery](http://docs.basex.org/wiki/XQuery_Update) dans une rangée, par la redirection vers le chemin RESTXQ de fonctions mises à jour. Tous deux relient une URL et un chemin RESTXQ.
 
 // Reprendre la traduction //
 
